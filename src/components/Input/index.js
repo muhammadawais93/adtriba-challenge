@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 
 export default function InputComponent(props) {
 	const { noMargin,label, id, type, min, max, step, name, value, handleCurrencyChange  } = props;
+
 	return (
 		<FormGroup noMargin={noMargin}>
 			{label && <Label htmlFor={id}>{label}</Label>}
@@ -19,6 +20,7 @@ export default function InputComponent(props) {
 					step={step}
 					onChange={e => handleCurrencyChange(e.target, name)}
 					value={value}
+					noMargin={noMargin}
 				/> :
 				<Input type={type} id={id} noMargin={noMargin} />
 			}

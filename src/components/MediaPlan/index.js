@@ -22,10 +22,10 @@ export default function MediaPlan() {
 	return (
 		<Container>
 			<form>
-				<InputComponent type="text" id="media-plain" label="Media Plan" />
+				<InputComponent type="text" id="media-plain" label="Media Plan" noMargin={false} />
 				<TwoColumns>
-					<InputComponent type="date" id="start-date" label="Start Date" />
-					<InputComponent type="date" id="end-date" label="End Date" />
+					<InputComponent type="date" id="start-date" label="Start Date" noMargin={false} />
+					<InputComponent type="date" id="end-date" label="End Date" noMargin={false} />
 				</TwoColumns>
 				<TableContainer>
 					<Table>
